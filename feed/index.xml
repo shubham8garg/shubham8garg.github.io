@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Shubham Garg</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Know me better !</description>
+	<lastBuildDate>Fri, 30 Jun 2017 05:48:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.7.13</generator>
+	<item>
+		<title>Model Evaluation Techniques</title>
+		<link>./../data-science/model-evaluation/index.html</link>
+		<comments>./../data-science/model-evaluation/index.html#respond</comments>
+		<pubDate>Fri, 30 Jun 2017 05:45:40 +0000</pubDate>
+		<dc:creator><![CDATA[user]]></dc:creator>
+				<category><![CDATA[data science]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=169</guid>
+		<description><![CDATA[There are various model evaluation techniques &#8211; Confidence Interval Confusion Matrix Gain and Lift Chart Kolmogorov-Smirnov Chart Chi Square AUC-ROC Curve Gini Coefficient Root Mean Square Error Concordant – Discordant Ratio Cross Validation Prediction Power L^1 version of RSME R-square and adjusted R-square http://scikit-learn.org/stable/user_guide.html &#160; &#160;]]></description>
+				<content:encoded><![CDATA[<p>There are various model evaluation techniques &#8211;</p>
+<ol>
+<li>Confidence Interval</li>
+<li>Confusion Matrix</li>
+<li>Gain and Lift Chart</li>
+<li>Kolmogorov-Smirnov Chart</li>
+<li>Chi Square</li>
+<li>AUC-ROC Curve</li>
+<li>Gini Coefficient</li>
+<li>Root Mean Square Error</li>
+<li>Concordant – Discordant Ratio</li>
+<li>Cross Validation</li>
+<li>Prediction Power</li>
+<li>L^1 version of RSME</li>
+<li>R-square and adjusted R-square</li>
+</ol>
+<p>http://scikit-learn.org/stable/user_guide.html</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>./../data-science/model-evaluation/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Windows: Managing two python versions in Anaconda</title>
+		<link>./../data-science/windows-managing-two-python-versions-in-anaconda/index.html</link>
+		<comments>./../data-science/windows-managing-two-python-versions-in-anaconda/index.html#respond</comments>
+		<pubDate>Thu, 30 Mar 2017 21:44:06 +0000</pubDate>
+		<dc:creator><![CDATA[user]]></dc:creator>
+				<category><![CDATA[data science]]></category>
+		<category><![CDATA[Python]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=144</guid>
+		<description><![CDATA[Hello Everyone, The idea of this post came across while I was struggling to manage two versions of python in Anaconda. As a Python novice, I started using Anaconda -Ipython Notebook and Spyder IDE. I really liked the user-friendliness of these environments. I was using Python 3.5 in Anaconda. The problem started when I was [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Hello Everyone,</p>
+<p>The idea of this post came across while I was struggling to manage two versions of python in Anaconda.<br />
+As a Python novice, I started using Anaconda -Ipython Notebook and Spyder IDE.<br />
+I really liked the user-friendliness of these environments. I was using Python 3.5 in Anaconda.</p>
+<p>The problem started when I was trying to learn some concepts and projects in python. Those included some libraries which are only supported by Python 2.7 but not Python 3.5<br />
+I did not want to uninstall Anaconda and re-install an older version which supports Python 2.7 because there are many other projects for which Python 3.5 is required.</p>
+<p>&nbsp;</p>
+<p><strong>If you are also struggling with similar problem of installing two different versions of Python in Anaconda, then you can follow these steps &#8211;</strong></p>
+<p><strong>1.</strong> Ensure that Anaconda path is set in your system environment variables. If not, then set PATH environment variable &#8211;</p>
+<p><img class="alignnone size-medium wp-image-145" src="./../wp-content/uploads/2017/03/1-300x286.jpg" alt="" width="300" height="286" srcset="./../wp-content/uploads/2017/03/1-300x286.jpg 300w, ./../wp-content/uploads/2017/03/1.jpg 533w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p><strong>2.</strong> Run CMD-command prompt as Administrator and try out conda command as &#8211;</p>
+<p>conda &#8211;version</p>
+<p>It will successfully run and result the version of conda installed.</p>
+<p>&nbsp;</p>
+<p><strong>3.</strong> Now, create a new Python 2.7 environment in conda with the following command &#8211;</p>
+<p>conda create -n py27 python=2.7 anaconda</p>
+<p>In this command, py27 is the name of the new environment being created. You can change the name as per your need.<br />
+This will take some time and create a new Python 2.7 version.</p>
+<p>&nbsp;</p>
+<p><strong>4.</strong> After it created, you can activate new environment by entering following command &#8211;</p>
+<p>activate py27</p>
+<p>&nbsp;</p>
+<p><strong>5.</strong> After new Python 2.7 version got activated, you can start Anaconda Navigator where you can choose which environment to choose. &#8216;root&#8217; is the default python environment set in Anaconda which would be Python 3.5 in this case. Here is the screenshot to select the Python environment in Anaconda-<br />
+<img class="alignnone size-large wp-image-146" src="./../wp-content/uploads/2017/03/2-1024x537.jpg" alt="" width="640" height="336" srcset="./../wp-content/uploads/2017/03/2-1024x537.jpg 1024w, ./../wp-content/uploads/2017/03/2-300x157.jpg 300w, ./../wp-content/uploads/2017/03/2-768x403.jpg 768w, ./../wp-content/uploads/2017/03/2.jpg 1366w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p>&nbsp;</p>
+<p><strong>6.</strong> After selecting Python 2.7 environment in Anaconda Navigator, you can Launch Ipython Notebook or Spyder IDE as per your requirement and verify the version of python in that. It will be Python 2.7</p>
+<p>&nbsp;</p>
+<p>Thanks for following the tutorial. <img src="https://s.w.org/images/core/emoji/2.2.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+			<wfw:commentRss>./../data-science/windows-managing-two-python-versions-in-anaconda/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Random Questions</title>
+		<link>./../data-science/random-questions/index.html</link>
+		<comments>./../data-science/random-questions/index.html#respond</comments>
+		<pubDate>Mon, 27 Mar 2017 09:24:19 +0000</pubDate>
+		<dc:creator><![CDATA[user]]></dc:creator>
+				<category><![CDATA[data science]]></category>
+
+		<guid isPermaLink="false">http:/?p=1</guid>
+		<description><![CDATA[Hi Everyone, You can find various random questions related to data science field on this page &#8211; &#160; Q1 &#8211; What if data in training and test dataset is very much different? (Then, the model which we will make on training dataset will not be applicable to test dataset) Ans &#8211; If training and test dataset [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Hi Everyone,<br />
+You can find various random questions related to data science field on this page &#8211;</p>
+<p>&nbsp;</p>
+<p><strong>Q1 &#8211; What if data in training and test dataset is very much different? (Then, the model which we will make on training dataset will not be applicable to test dataset)</strong><br />
+<strong>Ans &#8211;</strong> If training and test dataset are very much different then they are not satisfying the general rule of statistics that both training and test dataset should be <strong>IID &#8211; Independent and Identically Distributed</strong>. This means that all the data which is collected(training and test) is taken from the same source, and drawn from the same distribution.</p>
+<p>&nbsp;</p>
+<p><strong>Q2 &#8211; What is Bias and Variance?</strong><br />
+<strong>Ans &#8211;</strong> Bias means, ‘how much on an average are the predicted values different from the actual value’ while</p>
+<p>Variance means, ‘how different will the predictions of the model be at the same point if different samples are taken from the same population’.</p>
+]]></content:encoded>
+			<wfw:commentRss>./../data-science/random-questions/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
